@@ -14,8 +14,7 @@ public class question02 {
 		
 	}
 	
-	public question02(int account_number, int balance_beginning, int total_int, int total_all_credits,
-			int credit_limits) {
+	public question02(int account_number, int balance_beginning, int total_int, int total_all_credits, int credit_limits) {
 		this.account_number = account_number;
 		this.balance_beginning = balance_beginning;
 		this.total_int = total_int;
