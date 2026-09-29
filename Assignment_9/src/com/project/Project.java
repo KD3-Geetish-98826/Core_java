@@ -1,0 +1,86 @@
+package com.project;
+
+public class Project {
+
+	private int id;
+	private String title;
+	private int teamSize;
+	private double projectCost;
+	private String technology;
+
+	public Project() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Project(int id, String title, int teamSize, double projectCost, String technology) {
+		this.id = id;
+		this.title = title;
+		this.teamSize = teamSize;
+		this.projectCost = projectCost;
+		this.technology = technology;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public int getTeamSize() {
+		return teamSize;
+	}
+
+	public void setTeamSize(int teamSize) {
+		this.teamSize = teamSize;
+	}
+
+	public double getProjectCost() {
+		return projectCost;
+	}
+
+	public void setProjectCost(double projectCost) {
+		this.projectCost = projectCost;
+	}
+
+	public String getTechnology() {
+		return technology;
+	}
+
+	public void setTechnology(String technology) {
+		this.technology = technology;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == null)
+			return false;
+		if(this == obj)
+			return true;
+		if(!(obj instanceof Project))
+				return false;
+		Project other = (Project) obj;
+		return this.id == other.id;
+	}
+
+	@Override
+	public String toString() {
+		return "ID : " + id + ", Title : " + title + ", Team Size : " + teamSize + ", Project Cost : " + projectCost
+				+ ", Technology : " + technology;
+	}
+
+	@Override
+	public int hashCode() {
+		return Integer.hashCode(id);
+	}
+
+}
